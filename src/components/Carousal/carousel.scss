@@ -1,0 +1,42 @@
+.carousel {
+    display: grid;
+    place-content: center;
+    border-radius: 2rem;
+  }
+  .carousel-content {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10rem;
+  }
+  
+  .carousel-btns {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 6;
+  
+    button {
+      padding: 8px 15px;
+      width: 5rem;
+      background-color: rgb(62, 62, 62);
+      border-radius: 1rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import './carousel.scss'
+import { useEffect } from 'react'
 const Carousel = ({Data}) => {
   const [FlowDirection, setFlowDirection] = useState(true)
   const [CenterId, setCenterId] = useState(0)
@@ -44,6 +45,12 @@ const Carousel = ({Data}) => {
       setRightId(RightId - 1)
     }
   }
+
+  // useEffect(() => {
+    
+  //   const timerId = setInterval(() => nextBtn(), 2000)
+  //     return () => clearInterval(timerId)
+  // });
   const variants = {
     center: {
       x: '0rem',
@@ -105,9 +112,9 @@ const Carousel = ({Data}) => {
     },
   }
   return (
-    <motion.div className="carousel">
+    <motion.div className="carousel-wrapper">
       <motion.div className="carousel-content">
-        <AnimatePresence>
+        <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}
             variants={variants}

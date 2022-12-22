@@ -1,9 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
 .App {
   font-family: 'Poppins', sans-serif;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: #DBA39A;
+  background-color: antiquewhite;
   display: grid;
+  grid-template-columns: 50% 50%;
   place-content: center;
+  & > div{
+    width: 100%;
+  height: 50vh;
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+  h1{
+    color: white;
+    text-align: center;
+  
+  }
+  }
+
+}
+.carousel{
+  background-color: rgb(49, 95, 245);
+
+}
+.togglebtn{
+
+background-color: #252525;
+
+}
+
+
+
+.ToggleBtnWrapper{
+  cursor: pointer;
+  height: 5rem;
+  aspect-ratio: 2/1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius:100vw;
+  padding: 2%;
+  background-color: #ccc;
+  div{
+    aspect-ratio: 1/1;
+    height: 100%;
+    
+    border-radius: 100vw;
+    background-color: #898989;
+  }
+  &.active{
+    justify-content: flex-end !important;
+    background-color: #bada55;
+  
+  }
+}
+
+.hover3d-wrapper{
+background-color: rgb(107, 97, 156);
+  .hover3d{
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem 1.5rem;
+    // border:1px solid #252525;
+    background-color: #252525;
+    max-width: 25rem;
+
+  
+    h1{
+      color: #dddd;
+      font-size: 1.15rem;
+
+      text-align: left !important;
+    }
+    p{
+      max-width: calc(100% - 1rem);
+      font-size: .9rem;
+      color: rgb(159, 159, 159);
+    }
+  
+  
+  }
+}
+
+.todolist-wrapper{
+  background-color:#1e2439;
+
 }
